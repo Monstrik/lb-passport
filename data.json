@@ -1,0 +1,29 @@
+{
+  "ids": {
+    "user": 3,
+    "accessToken": 3,
+    "userCredential": 1,
+    "userIdentity": 3,
+    "ACL": 1,
+    "RoleMapping": 1,
+    "Role": 1
+  },
+  "models": {
+    "user": {
+      "1": "{\"username\":\"facebook.10154107925629033\",\"password\":\"$2a$10$GUSZAQJz5.5BmJBXAfcOv.MjuV3F8Zthj.TQLxhETTm9rT6r5V3Om\",\"email\":\"10154107925629033@loopback.facebook.com\",\"id\":1}",
+      "2": "{\"username\":\"google.114053048370763811167\",\"password\":\"$2a$10$6uttEkJlqV06CxSNztyohuDBgYjtevtoNvGyW9pNIynZyjgG6NqfK\",\"email\":\"114053048370763811167@loopback.google.com\",\"id\":2}"
+    },
+    "accessToken": {
+      "77kd0GSgDzrrHHgobhQRa53eS74JBb6fANjv3MHhAWNF2fer0IlKStKoJ1SC1We1": "{\"id\":\"77kd0GSgDzrrHHgobhQRa53eS74JBb6fANjv3MHhAWNF2fer0IlKStKoJ1SC1We1\",\"ttl\":1209600,\"created\":\"2017-03-06T16:25:07.383Z\",\"userId\":1}",
+      "OiYYfg5gASBinWjBeeDzxHlh3uefEqfqFP6TwinkwodHFQaBgy21yeS5GOO6MfRz": "{\"id\":\"OiYYfg5gASBinWjBeeDzxHlh3uefEqfqFP6TwinkwodHFQaBgy21yeS5GOO6MfRz\",\"ttl\":1209600,\"created\":\"2017-03-06T16:31:44.785Z\",\"userId\":2}"
+    },
+    "userCredential": {},
+    "userIdentity": {
+      "1": "{\"provider\":\"facebook\",\"authScheme\":\"oAuth 2.0\",\"externalId\":\"10154107925629033\",\"profile\":{\"id\":\"10154107925629033\",\"name\":{\"familyName\":\"Yakovis\",\"givenName\":\"Alexander\"},\"gender\":\"male\",\"profileUrl\":\"https://www.facebook.com/app_scoped_user_id/10154107925629033/\",\"emails\":[{\"value\":\"coolspammail@gmail.com\"}],\"provider\":\"facebook\",\"_raw\":\"{\\\"gender\\\":\\\"male\\\",\\\"link\\\":\\\"https:\\\\/\\\\/www.facebook.com\\\\/app_scoped_user_id\\\\/10154107925629033\\\\/\\\",\\\"locale\\\":\\\"en_US\\\",\\\"last_name\\\":\\\"Yakovis\\\",\\\"first_name\\\":\\\"Alexander\\\",\\\"timezone\\\":-5,\\\"verified\\\":true,\\\"email\\\":\\\"coolspammail\\\\u0040gmail.com\\\",\\\"updated_time\\\":\\\"2016-06-01T08:52:08+0000\\\",\\\"id\\\":\\\"10154107925629033\\\"}\",\"_json\":{\"gender\":\"male\",\"link\":\"https://www.facebook.com/app_scoped_user_id/10154107925629033/\",\"locale\":\"en_US\",\"last_name\":\"Yakovis\",\"first_name\":\"Alexander\",\"timezone\":-5,\"verified\":true,\"email\":\"coolspammail@gmail.com\",\"updated_time\":\"2016-06-01T08:52:08+0000\",\"id\":\"10154107925629033\"}},\"credentials\":{\"accessToken\":\"EAACclwRTmEUBAOvbBnSFVIPtDTEwXfePCWvRVo56cAXqcRWKEOAjHNku0OZBeuw0qfVRDq3yuZBgC6GYeo9R0dKugOhJ5eSESQKDkmiybR9gQDkq5F2kAZBGGteKdxWD0guQsRQ8Nljx7vtQiLjpWe4R2oDDv4ZD\"},\"created\":\"2017-03-06T16:25:07.380Z\",\"modified\":\"2017-03-06T16:25:07.380Z\",\"userId\":1,\"id\":1}",
+      "2": "{\"provider\":\"google\",\"authScheme\":\"oAuth 2.0\",\"externalId\":\"114053048370763811167\",\"profile\":{\"provider\":\"google\",\"id\":\"114053048370763811167\",\"displayName\":\"Alexander Yakovis\",\"name\":{\"familyName\":\"Yakovis\",\"givenName\":\"Alexander\"},\"emails\":[{\"value\":\"yakovis@boylesoftware.com\"}],\"_raw\":\"{\\n \\\"id\\\": \\\"114053048370763811167\\\",\\n \\\"email\\\": \\\"yakovis@boylesoftware.com\\\",\\n \\\"verified_email\\\": true,\\n \\\"name\\\": \\\"Alexander Yakovis\\\",\\n \\\"given_name\\\": \\\"Alexander\\\",\\n \\\"family_name\\\": \\\"Yakovis\\\",\\n \\\"picture\\\": \\\"https://lh5.googleusercontent.com/-HgPFnwwjnBA/AAAAAAAAAAI/AAAAAAAAAB0/0zhXcSzGUCg/photo.jpg\\\",\\n \\\"locale\\\": \\\"en\\\",\\n \\\"hd\\\": \\\"boylesoftware.com\\\"\\n}\\n\",\"_json\":{\"id\":\"114053048370763811167\",\"email\":\"yakovis@boylesoftware.com\",\"verified_email\":true,\"name\":\"Alexander Yakovis\",\"given_name\":\"Alexander\",\"family_name\":\"Yakovis\",\"picture\":\"https://lh5.googleusercontent.com/-HgPFnwwjnBA/AAAAAAAAAAI/AAAAAAAAAB0/0zhXcSzGUCg/photo.jpg\",\"locale\":\"en\",\"hd\":\"boylesoftware.com\"}},\"credentials\":{\"accessToken\":\"ya29.GlsGBCf6DvIF-E8oN8TMAEfjjyVVJaf0MItiHPO1-U4rTXMOACn0liOug4KECG46WfY69CRMlEqi15RFLwJ0bwCxsd19lmulQ3_DV5QgQBCPDxMsAA8de_i20ZfV\"},\"created\":\"2017-03-06T16:31:44.782Z\",\"modified\":\"2017-03-06T16:31:44.782Z\",\"userId\":2,\"id\":2}"
+    },
+    "ACL": {},
+    "RoleMapping": {},
+    "Role": {}
+  }
+}
