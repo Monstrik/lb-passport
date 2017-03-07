@@ -5,9 +5,9 @@
   "properties": {},
   "validations": [],
   "relations": {
-    "user": {
+    "customer": {
       "type": "belongsTo",
-      "model": "user",
+      "model": "customer",
       "foreignKey": "userId"
     }
   },

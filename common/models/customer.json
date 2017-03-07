@@ -1,6 +1,6 @@
 {
-  "name": "user",
-  "plural": "users",
+  "name": "customer",
+  "plural": "customers",
   "base": "User",
   "relations": {
     "accessTokens": {
