@@ -3,5 +3,14 @@
     "name": "db",
     "connector": "memory",
     "file": "data.json"
+  },
+  "sql": {
+    "name": "sql",
+    "connector": "mysql",
+    "host": "35.184.35.67",
+    "port": 3306,
+    "database": "testsql",
+    "password": "authsqluserpass",
+    "user": "authsqluser"
   }
 }
