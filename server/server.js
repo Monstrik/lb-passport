@@ -7,6 +7,8 @@
 var loopback = require('loopback');
 var boot = require('loopback-boot');
 var app = module.exports = loopback();
+
+
 var cookieParser = require('cookie-parser');
 var session = require('express-session');
 
@@ -76,7 +78,7 @@ passportConfigurator.init();
 app.use(flash());
 
 passportConfigurator.setupModels({
-  userModel: app.models.user,
+  userModel: app.models.customer,
   userIdentityModel: app.models.userIdentity,
   userCredentialModel: app.models.userCredential,
 });
@@ -87,6 +89,10 @@ for (var s in config) {
 }
 var ensureLoggedIn = require('connect-ensure-login').ensureLoggedIn;
 
+
+
+
+
 app.get('/', function(req, res, next) {
   res.render('pages/index', {user:
     req.user,
@@ -94,10 +100,13 @@ app.get('/', function(req, res, next) {
   });
 });
 
+
+
 app.get('/auth/account', ensureLoggedIn('/login'), function(req, res, next) {
   res.render('pages/loginProfiles', {
     user: req.user,
     url: req.url,
+    token: req.user.token
   });
 });
 
@@ -108,15 +117,15 @@ app.get('/local', function(req, res, next) {
   });
 });
 
-app.get('/signup', function(req, res, next) {
-  res.render('pages/signup', {
-    user: req.user,
-    url: req.url,
-  });
-});
+// app.get('/signup', function(req, res, next) {
+//   res.render('pages/signup', {
+//     user: req.user,
+//     url: req.url,
+//   });
+// });
 
 app.post('/signup', function(req, res, next) {
-  var User = app.models.user;
+  var User = app.models.customer;
 
   var newUser = {};
   newUser.email = req.body.email.toLowerCase();
@@ -150,10 +159,16 @@ app.get('/login', function(req, res, next) {
   });
 });
 
+
+
 app.get('/auth/logout', function(req, res, next) {
   req.logout();
   res.redirect('/');
 });
+
+
+
+
 
 app.start = function() {
   // start the web server
